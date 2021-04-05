@@ -1,0 +1,64 @@
+<footer>
+    <hr>
+    <div class="row">
+        <div class="col logo">
+            <a href="/home">
+                <img src="../../assets/images/logo.jpg" alt="">
+            </a>
+        </div>
+        <div class="col footer-social">
+            <a href="https://www.facebook.com/enduriscyclehouse/" class="social-icon"><img src="../../assets/icons/footer/logo-facebook.svg">Facebook</a>
+            <br/>
+            <a href="https://www.instagram.com/enduriscyclehouse/" class="social-icon"><img src="../../assets/icons/footer/logo-instagram.svg">Instagram</a>
+        </div>
+    </div>
+    <hr>
+    <div class="container footer-location">
+        <div class="row">
+            <div class="col">
+                <a href="https://www.google.com/maps/place/Enduri+cycle+house/@18.6761331,78.0929449,17z/data=!3m1!4b1!4m5!3m4!1s0x3bcddb248fd7d8ed:0x9a78b5ce7c160ec9!8m2!3d18.676128!4d78.0951336" class="icon">
+                    <img src="../../assets/icons/footer/location-outline.svg">Nizamabad
+                </a>
+                <p *ngIf="showFullLocationDetails">
+                    7-7-606, Marwadi Galli, NRI Colony, Arsapally, Nizamabad, Telangana 503001, India
+                </p>
+            </div>
+            <div class="col">
+                <a href="https://www.google.com/maps/place/Avon+Cycles+-+Endoori+Bhoomaiah+Cycle+Stores/@18.6731268,78.0947594,15z/data=!4m5!3m4!1s0x0:0x33a91dd8b1203a70!8m2!3d18.6731268!4d78.0947594" class="icon">
+                    <img src="../../assets/icons/footer/location-outline.svg">Nizamabad
+                </a>
+                <p *ngIf="showFullLocationDetails">
+                    Gandhi Chowk, beside gandhi statue, Nizamabad, Telangana 503001, India
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="https://www.google.com/maps/place/Enduri's+Cycle+House/@18.3197777,78.3249967,15z/data=!4m5!3m4!1s0x0:0x6180e440f6db0585!8m2!3d18.3197777!4d78.3249967" class="icon">
+                    <img src="../../assets/icons/footer/location-outline.svg">Kamareddy
+                </a>
+                <p *ngIf="showFullLocationDetails">
+                    5-3-115, Nizamsagar Rd, Chowrasta, Kamareddy, Telangana 503111, India
+                </p>
+            </div>
+            <div class="col">
+                <a href="https://www.google.com/maps/place/Cycle+House+Mancherial/@18.876767,79.445211,15z/data=!4m5!3m4!1s0x0:0x7699cbd9bc1119d9!8m2!3d18.876767!4d79.445211" class="icon">
+                    <img src="../../assets/icons/footer/location-outline.svg">Manchireal
+                </a>
+                <p *ngIf="showFullLocationDetails">
+                    Market Rd, old current office road, nearby kotak manindra bank, Mancherial, Telangana 504208, India
+                </p>
+            </div>
+        </div>
+        <div class="row full-location">
+            <button (click)="showLocationDetails()">
+                {{locationDetails}}
+            </button>
+        </div>
+    </div>
+
+    <div class="text-center p-3 text-center" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-white" href="#">enduricyclehouse.com</a>
+    </div>
+  </footer>

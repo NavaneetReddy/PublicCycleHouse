@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="/">
+        <img src="../../assets/images/logo.jpg" alt="" width="200">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class ="nav-item" [routerLinkActive]="['active']"> 
+          <a data-toggle="collapse" data-target="#navbarSupportedContent" [routerLink]="['home']"><img src='../../assets/icons/home-outline.svg' class="icon">Home</a>
+        </li>
+        <li class ="nav-item" [routerLinkActive]="['active']"> 
+          <a data-toggle="collapse" data-target="#navbarSupportedContent" [routerLink]="['Stores']"><img src='../../assets/icons/storefront-sharp.svg' class="icon">Stores</a>
+        </li>
+        <li class ="nav-item" [routerLinkActive]="['active']"> 
+          <a data-toggle="collapse" data-target="#navbarSupportedContent" [routerLink]="['aboutUs']"><img src='../../assets/icons/information-outline.svg' class="icon">About us</a>
+        </li>
+        <li class ="nav-item" [routerLinkActive]="['active']">
+          <a data-toggle="collapse" data-target="#navbarSupportedContent" [routerLink]="['ourTeam']"><img src='../../assets/icons/people-outline.svg' class="icon">Our Team</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Contact us
+          </a>
+          <div class="dropdown-menu text-center">
+            <a class="dropdown-item" href="#">Call</a>
+            <a class="dropdown-item" href="#">Email</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
